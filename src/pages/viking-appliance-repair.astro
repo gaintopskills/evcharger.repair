@@ -1,0 +1,157 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/viking-appliance-repair/",
+  "name": "Luxury Appliance Repair by Zaricci",
+  "url": "https://luxuryappliance.repair/viking-appliance-repair/",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "Luxury Appliance Repair by Zaricci specializes in Viking appliance repair, installation, and maintenance for professional-grade kitchen and refrigeration appliances. Our certified technicians deliver expert, white-glove service using genuine Viking parts, restoring the powerful performance, style, and innovation of your appliances across Los Angeles and surrounding areas.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Viking",
+    "url": "https://www.vikingrange.com/"
+  },
+  "serviceType": "Viking Appliance Repair, Installation, and Maintenance",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Southern California"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Viking Appliance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Viking Appliance Repair",
+          "description": "Expert repair services for Viking ranges, ovens, cooktops, refrigerators, dishwashers, and ventilation systems, restoring power, precision, and efficiency to professional-grade standards."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Viking Appliance Installation",
+          "description": "Professional installation of Viking appliances including ranges, built-in refrigerators, cooktops, ovens, and dishwashers with factory-accurate setup and calibration."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Viking Appliance Maintenance",
+          "description": "Preventive maintenance services for Viking appliances to ensure professional-grade performance, energy efficiency, and maximum product lifespan."
+        }
+      }
+    ]
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Luxury Appliance Repair by Zaricci",
+    "url": "https://luxuryappliance.repair/"
+  },
+  "knowsAbout": [
+    "Viking Appliance Repair",
+    "Viking Range Service",
+    "Viking Cooktop and Oven Repairs",
+    "Viking Professional Refrigerator Service",
+    "Viking Ventilation Hood Repairs",
+    "Viking Dishwasher Service",
+    "Viking 5 Series and 7 Series Range Repairs",
+    "Luxury Viking Appliance Maintenance",
+    "Premium Appliance Repair Southern California",
+    "Built-in Viking Appliance Installation"
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Schedule Viking Appliance Service"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
+---
+<Layout
+	title="Viking Repair – Specialized Service for Your Premium Viking Appliances"
+	description="Viking appliances combine professional-grade performance with sleek design, making them a mainstay in luxury kitchens."
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Viking Repair – Specialized Service for Your Premium Viking Appliances</h1>
+  <p>Viking appliances combine professional-grade performance with sleek design, making them a mainstay in luxury kitchens. At <strong>Luxury Appliance Repair by Zaricci</strong>, we excel in Viking repair, providing high-level expertise for Viking refrigerators, Viking ovens, Viking stoves, and more. Whether you’re experiencing irregular temperatures, ignition issues, or software glitches, our skilled technicians have the brand-specific knowledge to quickly diagnose and resolve the problem.</p>
+</section>
+
+<section>
+  <h3>Why Trust Us for Viking Appliance Repair?</h3>
+  <ul>
+    <li><strong>Certified Technicians:</strong> Our team undergoes extensive training to stay updated with Viking’s latest technologies. Count on us for precise, efficient fixes.</li>
+    <li><strong>Genuine Viking Parts:</strong> We only use manufacturer-approved components to preserve your Viking appliance’s performance and prolong its lifespan.</li>
+    <li><strong>Same-Day Service (When Possible):</strong> We understand how disruptive a faulty premium appliance can be. That’s why we strive to offer same-day or next-day appointments to get your kitchen back on track.</li>
+    <li><strong>Transparent Pricing:</strong> We believe in honesty and clarity. You’ll receive an upfront quote before any repairs begin—no hidden fees, ever.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Viking Appliances We Service</h3>
+  <ul>
+    <li><strong>Viking Refrigerators:</strong> From ice maker malfunctions to temperature regulation issues, we’ve got your cooling system covered.</li>
+    <li><strong>Viking Ovens & Ranges:</strong> We handle uneven heating, ignition problems, and other common faults, restoring your cooking appliance to peak performance.</li>
+    <li><strong>Viking Stoves & Cooktops:</strong> Our technicians are well-versed in gas, electric, and induction stovetops—so you can cook with confidence.</li>
+    <li><strong>Viking Dishwashers:</strong> Addressing leaks, draining problems, and digital display errors, ensuring your Viking dishwasher stays efficient.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Common Viking Repair Issues</h3>
+  <ul>
+    <li><strong>Faulty Igniters & Burners:</strong> If your Viking stove won’t ignite or maintain a steady flame, we’ll diagnose and fix the issue promptly.</li>
+    <li><strong>Temperature Inconsistencies:</strong> An oven that runs too hot or too cold can ruin your favorite recipes—our solutions ensure precise temperature control.</li>
+    <li><strong>Control Panel Glitches:</strong> High-tech Viking appliances may experience software or electronic failures, which our team can efficiently troubleshoot and repair.</li>
+    <li><strong>Water Leaks & Clogs:</strong> We tackle any leaks or clogs in Viking dishwashers or refrigerators, preventing potential water damage and higher utility bills.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Our Viking Repair Process</h3>
+  <ul>
+    <li><strong>Scheduling & Consultation:</strong> Book your appointment online or by phone. We’ll gather initial details about your appliance issue.</li>
+    <li><strong>In-Depth Diagnosis:</strong> Our certified technician arrives on time, using specialized Viking repair tools to pinpoint the root cause.</li>
+    <li><strong>Comprehensive Repair Plan:</strong> We provide an upfront estimate and explain the steps needed to restore your premium appliance.</li>
+    <li><strong>High-Quality Repairs:</strong> We use genuine Viking parts and proven methods for a long-lasting solution.</li>
+    <li><strong>Post-Repair Testing:</strong> Before we leave, we verify that your appliance is functioning at optimal levels—backed by our service warranty.</li>
+  </ul>
+</section>
+<section>
+  <h3>Book Your Viking Repair Appointment Today</h3>
+  <p>Don’t let a broken Viking appliance hinder your daily routine. At <strong>Luxury Appliance Repair by Zaricci</strong>, we specialize in delivering high-end appliance service you can trust. Contact us now to schedule your Viking repair and experience our dedication to exceptional quality and customer satisfaction.</p>
+  <p>When it comes to premium appliances, choosing the right repair team makes all the difference. Let us help you keep your Viking kitchen running at peak efficiency—every day.</p>
+</section>
+</div>
+</Layout>

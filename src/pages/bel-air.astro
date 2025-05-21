@@ -1,0 +1,221 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Luxury Appliance Repair by Zaricci",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "@id": "https://luxuryappliance.repair/bel-air/",
+  "url": "https://luxuryappliance.repair/bel-air/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "description": "Luxury Appliance Repair by Zaricci provides expert in-home appliance repair services in Bel Air. We specialize in luxury brands like Sub-Zero, Wolf, Miele, Thermador, and La Cornue, delivering discreet, white-glove service with same-day appointments available.",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Bel Air, CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.097328,
+    "longitude": -118.463006
+  },
+  "serviceType": "Luxury Appliance Repair",
+  "makesOffer": {
+    "@type": "OfferCatalog",
+    "name": "Luxury Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair" } }
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ],
+ "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+   ]
+}
+---
+<Layout
+	title="Local Luxury Appliance Repair – Bel Air"
+	description="High-end appliances repair - Bel Air by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h2>Luxury Appliance Repair in Bel Air, CA</h2>
+  <p><strong>White-Glove Service for the Most Exclusive Kitchens in Los Angeles</strong></p>
+  <p>In Bel Air, luxury is a given—and expectations are higher than ever. From ultra-modern estates in the hills to timeless architectural masterpieces, your home was built with intention. So were your appliances. Brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, Gaggenau, Viking, and JennAir don’t just serve—they elevate the way you live.</p>
+  <p>When performance matters, and every detail counts, trust <strong>Luxury Appliance Repair by Zaricci</strong> to deliver the discreet, high-level service your home deserves. We provide certified luxury appliance repair in Bel Air, tailored to the needs of the city’s most discerning residents.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Bel Air Homeowners Rely on ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Trained in All Major Luxury Brands</strong><br/>We specialize in high-performance, fully integrated, and smart appliances—whether you’re working with a dual-fuel Wolf range, a panel-ready Sub-Zero, or a Miele steam oven. Our technicians are certified and highly trained in each brand’s technology.</li>
+    <li><strong>✅ OEM Parts Only. No Compromises.</strong><br/>Your appliances are an investment—we protect them using genuine manufacturer parts that meet original specifications for safety, longevity, and performance.</li>
+    <li><strong>✅ Same-Day or Next-Day Service</strong><br/>We offer priority scheduling in Bel Air and always arrive on time, with full respect for your time, privacy, and space.</li>
+    <li><strong>✅ Discreet, White-Glove Repair Experience</strong><br/>We wear protective gear, maintain clean workspaces, and communicate with the level of professionalism expected in the world’s most exclusive neighborhoods.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ High-End Appliances We Repair in Bel Air</h3>
+  <h4>❄️ Luxury Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Temperature inconsistencies</li>
+    <li>Ice maker or water dispenser failure</li>
+    <li>Loud noises or compressor problems</li>
+    <li>Custom panel or integrated door issues</li>
+  </ul>
+  <h4>🔥 Ranges, Ovens & Cooktops</h4>
+  <ul>
+    <li>Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Uneven baking or burner ignition failure</li>
+    <li>Smart connectivity issues</li>
+    <li>Control panel, knob, or seal malfunctions</li>
+  </ul>
+  <h4>🚿 Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Not draining, incomplete cycles, or leaks</li>
+    <li>Poor cleaning performance</li>
+    <li>Electrical or sensor-related errors</li>
+  </ul>
+  <h4>🧺 Washers & Dryers</h4>
+  <ul>
+    <li>Miele, LG Signature, Fisher & Paykel</li>
+    <li>Drum not spinning or draining</li>
+    <li>Overheating, long drying times</li>
+    <li>Control module and sensor diagnostics</li>
+  </ul>
+  <h4>☕ Built-In Appliances & Specialty Units</h4>
+  <ul>
+    <li>Wine coolers, espresso machines, warming drawers, and more</li>
+    <li>Power failures</li>
+    <li>Inconsistent temperatures</li>
+    <li>Smart tech not syncing or responding</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 Our Luxury Repair Process</h3>
+  <ol>
+    <li><strong>Book Your Appointment</strong><br/>Call or schedule online. We’ll confirm your preferred time and gather basic info about your appliance.</li>
+    <li><strong>On-Time Arrival & Brand-Specific Diagnosis</strong><br/>Your certified ZARICCI technician arrives promptly and performs a detailed inspection using specialized diagnostic tools.</li>
+    <li><strong>Clear, Upfront Estimate</strong><br/>We walk you through the issue and provide a transparent quote—no pressure, no surprises.</li>
+    <li><strong>Precision Repair Using OEM Parts</strong><br/>We complete the repair using authentic parts, restore function, and run comprehensive performance testing.</li>
+    <li><strong>Final Walkthrough & Service Warranty</strong><br/>We clean up, answer your questions, and back our work with a warranty—because confidence is part of the experience.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏠 Trusted in Bel Air’s Most Iconic Estates</h3>
+  <p>We proudly serve Old Bel Air, Lower Bel Air, Stone Canyon, East Gate, and Upper Bel Air—as well as neighboring enclaves like Holmby Hills, Beverly Crest, and Brentwood Park. Whether you’re a homeowner, property manager, or designer, ZARICCI is trusted in homes where every detail matters.</p>
+</section>
+
+<section>
+  <h3>Your Home Deserves More Than a Quick Fix</h3>
+  <p>Your luxury appliances were chosen for their performance, craftsmanship, and style. At <strong>ZARICCI</strong>, we deliver a repair experience that reflects those same values—with skill, discretion, and white-glove care from start to finish.</p>
+</section>
+
+<section>
+  <h3>📞 Schedule Your Luxury Appliance Repair in Bel Air Today</h3>
+  <p>Don’t wait for a small issue to become a major disruption.<br/>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now to schedule expert service in Bel Air, CA.</p>
+  <p><strong>👉 ZARICCI — Because Bel Air Homes Deserve World-Class Repair.</strong></p>
+</section>
+
+
+</div>
+</Layout>
